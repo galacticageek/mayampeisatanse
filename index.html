@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thouna Investment Data</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>THOUNA</h1>
+        <h2>Thouna Investment Data</h2>
+        <div class="lottie-container">
+            <lottie-player src="https://lottie.host/40c349be-f2a5-406b-a5dc-aa7ad6599167/I2QADVKtPb.json" background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+        </div>
+        <div id="error-message" class="error-message"></div>
+        <form id="investmentForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="amount">Amount of Investment:</label>
+            <input type="number" id="amount" name="amount" min="0" step="0.01" required>
+            <label for="area">Investment Area:</label>
+            <select id="area" name="area" required>
+                <option value="">Select an area</option>
+                <option value="Products">Products</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Others">Others</option>
+            </select>
+            <button type="submit">Update Toubi O</button>
+        </form>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
